@@ -1,0 +1,17 @@
+.navigation-bar {
+    background-color: #191D28;
+}
+
+.navbar-brand{
+    color: #FFCC73;
+    font-weight: 800;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center !important;
+}
+
+a.nav-link{
+    color: #ddd;
+    margin: 0 14px;
+}
