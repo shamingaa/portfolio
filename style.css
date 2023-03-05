@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #ddd;
 }
 
@@ -103,7 +103,7 @@ a.nav-link {
 
 .aboutImage {
   position: relative;
-  background-image:  url("./img/aboutMe.png");
+  background-image: url("./img/aboutMe.png");
   background-size: cover;
   background-position: top;
   width: 69%;
@@ -135,12 +135,12 @@ a.nav-link {
 
 /* style="background-color: #191d28; padding: 50px;" */
 
-#experticeSection{
-background-color: #191d28;
-padding: 50px;
+#experticeSection {
+  background-color: #191d28;
+  padding: 50px;
 }
 
-.expertiseIntro{
+.expertiseIntro {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -148,17 +148,51 @@ padding: 50px;
   text-align: center;
 }
 
-.expertCard{
+.expertCard {
   text-align: center;
   width: 100%;
   padding: 30px;
   box-shadow: 0px 1px 3px 1px #101218;
+  margin-bottom: 15px;
 }
 
-.expertTitle{
+.expertTitle {
   font-size: 18px;
   font-weight: 800;
   margin: 15px 0;
+}
+
+/* ================ FEATURED WORKS ================================ */
+
+#featuredWorks {
+  padding: 40px 0;
+  background-color: #161921;
+}
+
+.feature {
+  background-color: #191d28;
+  color: #a4a4a7;
+}
+
+.workBtns {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  /* background-color: #10121894;
+  padding: 5px 15px;
+  border-radius: 5px; */
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.btnWrapper:hover {
+  color: #ffcc73;
 }
 
 @media screen and (max-width: 768px) {
@@ -194,7 +228,7 @@ padding: 50px;
     width: 100%;
   }
 
-  #experticeSection{
+  #experticeSection {
     padding: 50px 0;
   }
 }
