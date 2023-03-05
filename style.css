@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  color: #ddd;
+}
+
 .navigation-bar {
   background-color: #191d28;
 }
@@ -59,7 +63,6 @@ a.nav-link {
 }
 
 .bannerText {
-  color: #fff;
   width: 100%;
 }
 
@@ -100,7 +103,7 @@ a.nav-link {
 
 .aboutImage {
   position: relative;
-  background-image: url("./img/aboutMe.png");
+  background-image:  url("./img/aboutMe.png");
   background-size: cover;
   background-position: top;
   width: 69%;
@@ -127,6 +130,35 @@ a.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* =================== Expertis ====================================== */
+
+/* style="background-color: #191d28; padding: 50px;" */
+
+#experticeSection{
+background-color: #191d28;
+padding: 50px;
+}
+
+.expertiseIntro{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.expertCard{
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 0px 1px 3px 1px #101218;
+}
+
+.expertTitle{
+  font-size: 18px;
+  font-weight: 800;
+  margin: 15px 0;
 }
 
 @media screen and (max-width: 768px) {
