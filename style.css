@@ -40,6 +40,10 @@ a.nav-link {
   background-color: #191d28;
 }
 
+.bannerCol {
+  background-color: #191d28;
+}
+
 .bannerWrapper {
   width: 100%;
   height: 90vh;
@@ -92,6 +96,38 @@ a.nav-link {
 #socialIcon {
   width: 20px;
 }
+/* ----------------- About ------------------------------ */
+
+.aboutImage {
+  position: relative;
+  background-image: url("./img/aboutMe.png");
+  background-size: cover;
+  background-position: top;
+  width: 69%;
+  height: 400px;
+}
+
+.aboutImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./img/aboutPattern.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+}
+
+.aboutWrapper {
+  width: 100%;
+  height: 338px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
   .bannerWrapper {
@@ -112,12 +148,17 @@ a.nav-link {
   .myPhotoWrapper {
     height: 55vh;
   }
-}
 
-/* @media screen and (max-width: 320px) {
-  .bannerWrapper {
-    padding: 0 10px;
-    height: 45vh;
-    justify-content: start;
+  .aboutRow {
+    flex-direction: column-reverse;
   }
-} */
+
+  .aboutWrapper {
+    height: unset;
+    margin: 20px 0;
+  }
+
+  .aboutImage {
+    width: 100%;
+  }
+}
