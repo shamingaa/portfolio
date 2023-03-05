@@ -30,13 +30,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Technologies</a>
+              <a class="nav-link" href="#experticeSection">Expertise</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Featured Works</a>
@@ -63,24 +65,30 @@
                   I'm <span id="firstName">Augustus</span> Shaminga
                 </h1>
                 <p>
-                  This is <span id="firstName">Augustus Shaminga</span>, a
-                  front-end developer and visual artist, looking for working
-                  around the globe.
+                  A front-end developer with some knowledge of back-end
+                  development, actively seeking worldwide job opportunities.
                 </p>
 
-                <button id="downloadCV">Download CV</button>
+                <a
+                  href="./augustus-shaminga-resume.pdf"
+                  download="augustus-shaminga-cv"
+                >
+                  <button id="downloadCV">Download CV</button>
+                </a>
               </div>
             </div>
 
             <div class="socialLinks">
               <ul>
                 <li>
-                  <a href="#"
+                  <a target="_blank" href="https://twitter.com/shamingaa"
                     ><img id="socialIcon" src="./img/twitter.png" alt="twitter"
                   /></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/augustus-shaminga-570519218/"
                     ><img
                       id="socialIcon"
                       src="./img/linkedin.png"
@@ -88,7 +96,7 @@
                   /></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a target="_blank" href="https://github.com/Shaminga6"
                     ><img id="socialIcon" src="./img/github.png" alt="github"
                   /></a>
                 </li>
@@ -103,7 +111,7 @@
     </section>
 
     <!-- ==================== ABOUT SECTION ======================== -->
-    <section style="background-color: #161921">
+    <section id="about" style="background-color: #161921">
       <div class="container">
         <div class="row aboutRow">
           <div class="col-lg-6">
@@ -116,9 +124,9 @@
                   <span id="firstName">About Me</span>
                 </h3>
                 <p>
-                  Augustus Shaminga is a frontend developer, passionate about
-                  developing lightning-fast, visually stunning and easy to use
-                  websites and applications that keeps users engaged.
+                  I'm a frontend developer, passionate about developing
+                  lightning-fast, visually stunning and easy to use websites and
+                  applications that keeps users engaged.
                 </p>
 
                 <button id="downloadCV">Hire Me</button>
@@ -136,10 +144,10 @@
           <h3>
             <span id="firstName">Expertise Area</span>
           </h3>
-          <p>
+          <!-- <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             provident quae, eius eveniet nulla alias!
-          </p>
+          </p> -->
         </div>
       </div>
 
@@ -150,9 +158,10 @@
               <img src="./img/front.png" alt="front-end" />
               <div class="expertTitle">Front-end Development</div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloribus sequi harum in incidunt. Tempora assumenda nam autem
-                pariatur quam, veritatis voluptatem ipsum cumque! Minima, est!
+                I design and implement visually appealing websites and
+                applications using technologies such as HTML, CSS, JavaScript
+                and React. With a keen eye for design and a passion for creating
+                intuitive user experiences.
               </p>
             </div>
           </div>
@@ -162,15 +171,19 @@
               <img src="./img/back.png" alt="back-end" />
               <div class="expertTitle">Back-end Development</div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloribus sequi harum in incidunt. Tempora assumenda nam autem
-                pariatur quam, veritatis voluptatem ipsum cumque! Minima, est!
+                I also specialize in building and maintaining the server-side of
+                web applications. My expertise lies in crafting robust,
+                scalable, and efficient APIs that power the functionality of web
+                apps. I have experience working with JavaScript, Node.js, and
+                Express.js
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    
 
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   </body>
