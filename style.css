@@ -6,6 +6,7 @@
 
 body {
   color: #ddd;
+  background-color: #161921;
 }
 
 .navigation-bar {
@@ -154,6 +155,7 @@ a.nav-link {
   padding: 30px;
   box-shadow: 0px 1px 3px 1px #101218;
   margin-bottom: 15px;
+  height: 350px;
 }
 
 .expertTitle {
@@ -172,16 +174,18 @@ a.nav-link {
 .feature {
   background-color: #191d28;
   color: #a4a4a7;
+  position: relative;
+  height: 490px;
 }
 
 .workBtns {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  /* background-color: #10121894;
-  padding: 5px 15px;
-  border-radius: 5px; */
-}
+  position: absolute;
+  bottom: 5%;
+  width: 80%;
+ }
 
 .btnWrapper {
   display: flex;
@@ -193,6 +197,61 @@ a.nav-link {
 
 .btnWrapper:hover {
   color: #ffcc73;
+}
+
+/* ================== Contact ============================ */
+
+#contact {
+  width: 100%;
+  height: 420px;
+  background-color: #161921;
+  position: relative;
+}
+
+.contactDesc {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 20px;
+}
+
+.mailBtn {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+}
+
+.formInput {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ddd;
+  color: #ddd;
+}
+
+.formInput:focus {
+  outline: none;
+  border-bottom: 2px solid #ffcc73;
+}
+
+.formCard {
+  width: 90%;
+  background-color: #191d28;
+  color: #a4a4a7;
+  padding: 30px 0;
+  box-shadow: 0px 1px 3px 1px #101218;
+}
+
+#formCard {
+  margin: 30px;
+}
+
+/* =============================================== */
+
+#footer {
+  width: 100%;
+  height: 200px;
+  background-color: #08090c;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,5 +289,17 @@ a.nav-link {
 
   #experticeSection {
     padding: 50px 0;
+  }
+
+  .contactDesc{
+    position: unset;
+  }
+
+  .mailBtn{
+    position: unset;
+  }
+
+  .formCard{
+    width: 100%;
   }
 }
