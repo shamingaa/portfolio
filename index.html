@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shaminga</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
@@ -322,12 +323,20 @@
         <!-- ------------ Contact Card ---------------------- -->
         <div class="col-lg-4 mailBtn">
           <div class="formCard">
-            <form action="" method="post" id="formCard">
+            <form id="formCard">
               <div class="mb-5">
-                <input type="text" class="formInput" placeholder="Your Name" />
+                <input
+                  required
+                  type="text"
+                  name="subject"
+                  class="formInput"
+                  placeholder="Your Name"
+                />
               </div>
               <div class="mb-5">
                 <input
+                  required
+                  name="email_from"
                   type="email"
                   class="formInput"
                   placeholder="Email Address"
@@ -335,13 +344,22 @@
               </div>
 
               <textarea
+                required
+                name="message"
                 class="formInput"
                 placeholder="Project Description"
                 rows="3"
               ></textarea>
 
               <div class="mt-3" style="display: flex; justify-content: end">
-                <button id="downloadCV">Hire Me</button>
+                <button
+                  id="downloadCV"
+                  type="submit"
+                  class="sendMail"
+                  value="Hire Me"
+                >
+                  Hire Me
+                </button>
               </div>
             </form>
           </div>
@@ -376,6 +394,49 @@
       </div>
     </section>
 
+    <!-- Success Alert -->
+    <div
+      class="alert alert-success alert-dismissible fade show alertMessage"
+      role="alert"
+      id="succeessAlert"
+    >
+      Email sent successfully
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div
+      class="alert alert-danger alert-dismissible fade show alertMessage"
+      role="alert"
+      id="failAlert"
+    >
+      Email not sent!
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- --------------- JavaScript ----------------------------- -->
+    <script src="./jquery/3.3.1/jquery.min.js"></script>
+    <script src="./popper.js/1.14.7/umd/popper.min.js"></script>
+
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("V_0pICLQTV_rFHhyQ");
+    </script>
+
+    <script src="./main.js"></script>
   </body>
 </html>
